@@ -5,20 +5,19 @@
   box-sizing: border-box;
 }
 
-/* Style the body with a Google Font, full height, and a light background */
+/* Style the body with a Google Font, full height, and a vibrant pink background */
 body {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #ff0095;
+  background-color: #ff0095; /* Vibrant Pink */
   font-size: 18px;
   line-height: 1.6;
   color: #333;
 }
 
-/* Style the container for the calculator */
 #app {
   background-color: #ffffff;
   border: 5px solid #000000; /* Lighter border to simulate the edge of paper */
@@ -34,53 +33,54 @@ body {
   margin: 0 auto;
 }
 
-/* Add styles to the heading */
 h1 {
-  font-size: 1.5em;
-  color: #5f6368;
+  font-size: 2em; /* Increased font size for impact */
+  color: #000000; /* Making the text black for better contrast */
   text-align: center;
   margin-bottom: 1em;
 }
 
-/* Style the input fields with padding and borders */
+
 input[type="number"] {
   padding: 10px;
   background-color: white;
-  border: 2.5px solid #000000;
-  margin-bottom: 0.5em; /* Add space below each input */
-  width: calc(100% - 22px); /* Adjust width, consider padding and border */
+  border: 1px solid #cccccc; /* Lightened border color */
+  margin-bottom: 1em; /* Uniform space below each input */
+  width: 100%; /* Full width inputs */
   font-size: 1em;
 }
 
-/* Style the button with a color, padding, and interactive effects */
+/* Style the button with a cyan color, padding, and interactive effects */
 button {
-  padding: 10px 20px;
-  background-color: #35e8d9;
+  padding: 15px; /* Increased padding for a larger button */
+  background-color: #00bcd4; /* Cyan color for the button */
   color: white;
   border: none;
   cursor: pointer;
   font-size: 1em;
-  width: 100%; /* Make button full width */
-  box-sizing: border-box; /* Include padding in width calculation */
-  transition: background-color 0.3s;
-  margin-bottom: 0.5em; /* Add space below button */
+  width: 100%; /* Full width button */
+  border-radius: 4px; /* Rounded corners for the button */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth color transition and subtle transform on hover */
 }
 
-/* Change background color on hover for the button */
+/* Change background color on hover for the button and lift the button slightly */
 button:hover {
-  background-color: #35e8d9;
+  background-color: #0097a7; /* Slightly darker shade on hover */
+  transform: translateY(-2px); /* Lift the button to imply action */
 }
 
-/* Style the result area */
+/* Style the result area for clear readability */
 #result {
   padding: 10px;
-  background-color: #ddd;
-  color: #202124;
+  background-color: #f7f7f7; /* Light gray background for subtle contrast */
+  color: #000000; /* Black color for text for readability */
   text-align: center;
+  margin-top: 1em; /* Space before the result area */
+  border-radius: 4px; /* Rounded corners for the result box */
 }
 
-/* Ensure inputs and button take full width */
+/* Ensure inputs and button take full width and have rounded corners */
 #app > input, #app > button {
-  width: 100%;
   display: block;
+  border-radius: 4px; /* Rounded corners for inputs and button */
 }
