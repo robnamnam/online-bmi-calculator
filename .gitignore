@@ -9,7 +9,6 @@ lerna-debug.log*
 ssh -T git@github.com
 node_modules
 dist
-
 dist-ssr
 *.local
 
